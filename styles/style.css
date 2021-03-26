@@ -73,5 +73,18 @@ main section {
 
 footer div {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+
+footer div .attribution {
+    width: 50%;
+    align-items: center;
+}
+
+footer div .social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
