@@ -8,7 +8,7 @@ body {
     background-image: url('./../images/bg-desktop.svg');
     background-color: hsl(257, 40%, 49%);
     height: 100vh;
-    margin: 22px;
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: white;
@@ -18,7 +18,7 @@ body {
 header {
     margin-top: 5px;
     /* margin-left: 25px; */
-    height: 150px;
+    height: 100px;
     width: 100%;
 }
 
@@ -51,7 +51,7 @@ h2 {
 /* Parte do texto - flex-item */
 
 main section {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 25px;
     width: 33%;
     font-size: 1.3rem;
@@ -76,41 +76,82 @@ main section {
 
 /* Footer do site */
 
-footer div {
+footer {
     display: flex;
+    justify-content: flex-end;
     width: 100%;
 }
 
-footer div .attribution {
-    width: 50%;
-    align-items: center;
+.social-media {
+    margin-bottom: 10px;
 }
 
-footer div .social-media {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+@media screen and (max-width:650px) {
+    html {
+        margin: 0;
+    }
+    header {
+        /* margin-left: 25px; */
+        height: 30px;
+        width: 100%;
+    }
+    body {
+        flex-direction: column-reverse;
+    }
+    main section {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    main {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+    .text button {
+        margin-top: 5px;
+        width: 100px;
+        height: 36px;
+        justify-content: center;
+    }
 }
 
 @media(max-width:425px) {
     html {
         overflow: auto;
     }
+    header {
+        margin-top: 5px;
+        /* margin-left: 25px; */
+        height: 50px;
+        width: 100%;
+    }
     body {
         flex-direction: column-reverse;
+    }
+    .wrapper {
+        padding: 34px;
     }
     main {
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
+        text-align: center;
+        padding: 48px 0 51px;
     }
     main section {
-        margin-top: 30px;
-        margin-left: 25px;
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.02rem;
         color: ghostwhite;
+        text-align: center;
+        margin: 0%;
     }
 }
