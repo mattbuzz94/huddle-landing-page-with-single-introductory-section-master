@@ -42,5 +42,5 @@ it was very challenging for me, but I think that the result was good.
 ## Author
 
 - LinkedIn - [Matheus Maciel](https://www.linkedin.com/in/matheus-maciel-9222b5a6/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@matt_maciel94](https://www.twitter.com/matt_maciel94)
+- Frontend Mentor - [@mattbuzz94](https://www.frontendmentor.io/profile/mattbuzz94)
